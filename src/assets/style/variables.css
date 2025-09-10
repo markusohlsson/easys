@@ -1,0 +1,33 @@
+/* variables.css */
+
+/* Import fonts (Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+  /* ===== Colors ===== */
+  --color-primary: #1F3C88;   /* Navy Blue */
+  --color-secondary: #F4F4F4; /* Light Gray */
+  --color-accent: #2E8B57;    /* Emerald Green */
+  --color-text: #2C2C2C;      /* Dark Charcoal for body text */
+  --color-background: #FFFFFF;/* White background */
+
+  /* ===== Typography ===== */
+  --font-heading: 'Merriweather', serif;
+  --font-body: 'Open Sans', sans-serif;
+
+  /* ===== Font Sizes ===== */
+  --text-xs: 0.75rem;  /* 12px */
+  --text-sm: 0.875rem; /* 14px */
+  --text-base: 1rem;   /* 16px */
+  --text-lg: 1.125rem; /* 18px */
+  --text-xl: 1.25rem;  /* 20px */
+  --text-2xl: 1.5rem;  /* 24px */
+  --text-3xl: 1.875rem;/* 30px */
+
+  /* ===== Spacing ===== */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+}

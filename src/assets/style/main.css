@@ -1,0 +1,16 @@
+@import url('../style/variables.css');
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background: var(--color-background);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  color: var(--color-primary);
+}
+
+a {
+  color: var(--color-accent);
+}
