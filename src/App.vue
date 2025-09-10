@@ -1,9 +1,10 @@
 <script setup>
+import Footer from './components/Footer.vue';
+import Navigation from './components/Navigation.vue'
 </script>
 
 <template>
-  <router-view></router-view>
+  <Navigation />
+  <router-view />
+  <Footer />
 </template>
-
-<style scoped>
-</style>

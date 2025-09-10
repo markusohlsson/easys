@@ -1,28 +1,28 @@
-/* variables.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Spline+Sans:wght@400;500;600;700&display=swap');
 
-/* Import fonts (Google Fonts) */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
 
 :root {
-  /* ===== Colors ===== */
-  --color-primary: #1F3C88;   /* Navy Blue */
-  --color-secondary: #F4F4F4; /* Light Gray */
-  --color-accent: #2E8B57;    /* Emerald Green */
-  --color-text: #2C2C2C;      /* Dark Charcoal for body text */
-  --color-background: #FFFFFF;/* White background */
+  --color-background: #fdfcf7;   /* light beige */
+  --color-surface: #fff;      /* white cards / sections */
+  --color-primary: #1b4b3a;      /* deep green accent */
+  --color-primary-dark: #163a2d; /* hover / active dark green */
+  --color-text: #1a202c;         /* dark text on light background */
+  --color-text-light: #fdfcf7;   /* text on dark backgrounds if needed */
+  --color-button-text: #fff;  /* text on green buttons */
+  --color-border: #e2e8f0;       /* subtle borders / dividers */
 
   /* ===== Typography ===== */
-  --font-heading: 'Merriweather', serif;
-  --font-body: 'Open Sans', sans-serif;
-
+  --font-heading: 'Spline Sans', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  
   /* ===== Font Sizes ===== */
-  --text-xs: 0.75rem;  /* 12px */
-  --text-sm: 0.875rem; /* 14px */
-  --text-base: 1rem;   /* 16px */
-  --text-lg: 1.125rem; /* 18px */
-  --text-xl: 1.25rem;  /* 20px */
-  --text-2xl: 1.5rem;  /* 24px */
-  --text-3xl: 1.875rem;/* 30px */
+  --text-xs: 0.75rem;  
+  --text-sm: 0.875rem; 
+  --text-base: 1rem;   
+  --text-lg: 1.125rem; 
+  --text-xl: 1.25rem;  
+  --text-2xl: 1.5rem;  
+  --text-3xl: 1.875rem;
 
   /* ===== Spacing ===== */
   --spacing-xs: 0.25rem;

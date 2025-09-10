@@ -3,14 +3,19 @@
 body {
   font-family: var(--font-body);
   color: var(--color-text);
-  background: var(--color-background);
+  background-color: var(--color-background);
+    margin: 0;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
-  color: var(--color-primary);
+  color: var(--color-text);
 }
 
-a {
-  color: var(--color-accent);
+.navigation h1 {
+  font-family: var(--font-heading);
+}
+
+p, li, a, span {
+  font-family: var(--font-body);
 }
