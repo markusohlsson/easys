@@ -2,15 +2,17 @@
 
 
 :root {
-  --color-background: #fdfcf7;   /* light beige */
-  --color-surface: #fff;      /* white cards / sections */
-  --color-primary: #1b4b3a;      /* deep green accent */
-  --color-primary-dark: #163a2d; /* hover / active dark green */
-  --color-text: #1a202c;         /* dark text on light background */
-  --color-text-light: #fdfcf7;   /* text on dark backgrounds if needed */
-  --color-button-text: #fff;  /* text on green buttons */
-  --color-border: #e2e8f0;       /* subtle borders / dividers */
-
+  --color-background-dark: #0F172A;  /* Dark background */
+  --color-background-light: #1E293B; /* Light background sections */
+  --color-surface: #1E293B;          /* Cards / surfaces on dark bg */
+  --color-primary: #D4AF37;          /* Buttons, icons, links */
+  --color-primary-dark: #B8912C;     /* Hover / active state (slightly darker gold) */
+  --color-text: #D1D5DB;             /* Accent text / body text on dark */
+  --color-text-light: #FFFFFF;       /* Titles / text on dark background */
+  --color-button-text: #0F172A;      /* Text on buttons */
+  --color-icon-bg: #334155;          /* Background behind icons */
+  --color-border: #D1D5DB;           /* Subtle borders */
+  
   /* ===== Typography ===== */
   --font-heading: 'Spline Sans', sans-serif;
   --font-body: 'Inter', sans-serif;

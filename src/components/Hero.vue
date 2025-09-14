@@ -1,7 +1,7 @@
 <template>
   <section class="hero">
     <div class="hero-content">
-      <h1>Easys Redovisning</h1>
+      <h1>Easy's Redovisning</h1>
       <p>Din trygga partner inom bokföring, bokslut och skatterådgivning sedan 1994.</p>
       <router-link
         to="/kontakt"
@@ -60,22 +60,7 @@
   font-size: clamp(1.1rem, 2vw, 1.5rem);
   line-height: 1.6;
   margin-bottom: 2rem;
-  color: #f1f5f9;
+  color: var(--color-text);
   text-shadow: 0 1px 4px rgb(0 0 0 / 40%);
-}
-
-.cta-button {
-  background-color: var(--color-primary);
-  color: var(--color-button-text);
-  padding: 0.85rem 2rem;
-  border-radius: 0.5rem;
-  font-weight: 600;
-  font-size: 1.125rem;
-  text-decoration: none;
-  transition: background 0.3s;
-}
-
-.cta-button:hover {
-  background-color: var(--color-primary-dark);
 }
 </style>

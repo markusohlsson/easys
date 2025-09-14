@@ -1,7 +1,7 @@
 <template>
   <section class="footer">
     <div>
-      <h1>Easys Redovisning</h1>
+      <h1>Easy's Redovisning</h1>
     </div>
     <div>
       <ul class="footer-links">
@@ -10,22 +10,22 @@
       </ul>
     </div>
     <div>
-      <span>© 2025 Easys Redovisning</span>
+      <span>© 2025 Easy's Redovisning</span>
     </div>
   </section>
 </template>
 
 <style scoped>
 .footer {
-    background-color: var(--color-primary-dark);
-    color: var(--color-text-light);
+    background-color: var(--color-background-dark);
+    color: var(--color-text);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .footer div h1 {
-    color: var(--color-text-light);
+    color: var(--color-text);
 }
 
 .footer-links {

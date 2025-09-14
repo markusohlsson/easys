@@ -1,95 +1,105 @@
+<script setup>
+import { BarChart } from 'lucide-vue-next';
+</script>
+
 <template>
   <nav class="navigation">
     <section class="navigation-section logo">
-      <h1>Easys Redovisning</h1>
+      <h1 class="nav-logo"><BarChart class="nav-logo-icon"/>Easy's Redovisning</h1>
     </section>
     <section class="navigation-section links">
       <ul class="navigation-links">
-        <li>
-          <router-link to="/">
-            Hem
-          </router-link>
-        </li>
-        <li>
-          <router-link to="/tjanster">
-            Tjänster
-          </router-link>
-        </li>
-        <li>
-          <router-link to="/om">
-            Om
-          </router-link>
-        </li>
-        <li>
-          <router-link to="/kontakt">
-            Kontakt
-          </router-link>
-        </li>
+        <li><router-link to="/">Hem</router-link></li>
+        <li class="divider"></li>
+        <li><router-link to="/tjanster">Tjänster</router-link></li>
+        <li class="divider"></li>
+        <li><router-link to="/om">Om</router-link></li>
+        <li class="divider"></li>
+        <li><router-link to="/faq">FAQ</router-link></li>
       </ul>
     </section>
     <section class="navigation-section cta">
-      <router-link
-        to="/kom-igang"
-        class="cta-button"
-      >
-        Kom igång
-      </router-link>
+      <router-link to="/kontakt" class="cta-button">Kontakta oss</router-link>
     </section>
   </nav>
 </template>
 
-<style>
+<style scoped>
+.nav-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-logo-icon {
+  height: 28px;
+  width: 28px;
+  color: var(--color-primary);
+}
+.navigation-links li a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px; /* space below text */
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-primary);
+  transition: transform 0.3s ease;
+}
+.navigation-links li a:hover::after {
+  transform: translateX(-50%) scaleX(1); /* expand underline */
+}
+
+.divider {
+  content: " ";
+  height: 20px;
+  width: 2px;
+  background-color: white;
+}
 .navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.25rem 2.5rem; /* a bit more padding for breathing room */
-  background-color: var(--color-surface);
-  box-shadow: 0 2px 8px rgb(0 0 0 / 5%);
+  padding: 1rem 2.5rem; /* top & bottom padding */
+}
+
+.navigation-links .router-link-active:not(.cta-button) {
+  color: var(--color-primary) !important;
 }
 
 .logo h1 {
-  color: var(--color-primary);
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 1.75rem; /* slightly bigger */
-  letter-spacing: -0.5px; /* tighter for elegance */
+  font-size: 1.75rem;
+  letter-spacing: -0.5px;
 }
 
 .navigation-links {
   display: flex;
   list-style: none;
-  gap: 2.5rem; /* more spacing between links */
+  gap: 2.5rem;
   padding-left: 0;
 }
 
 .navigation-links li a {
-  color: var(--color-text);
+  position: relative; 
+  display: inline-block;
+  color: var(--color-text-light);
   text-decoration: none;
-  font-weight: 500;
-  font-size: 1.1rem; /* increased font size */
+  font-weight: 800;
+  font-size: 1.1rem;
   letter-spacing: 0.2px;
   transition: color 0.3s;
 }
 
 .navigation-links li a:hover {
   color: var(--color-primary);
-}
-
-.cta-button {
-  background-color: var(--color-primary);
-  color: var(--color-button-text);
-  padding: 0.6rem 1.5rem;
-  border-radius: 0.5rem;
-  font-weight: 600;
-  font-size: 1.1rem; /* bigger CTA */
-  text-decoration: none;
-  transition: background 0.3s, color 0.3s, transform 0.2s;
-}
-
-.cta-button:hover {
-  background-color: var(--color-primary-dark);
-  color: var(--color-button-text);
-  transform: translateY(-2px); /* subtle hover lift */
 }
 </style>

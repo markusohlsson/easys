@@ -2,14 +2,13 @@
 
 body {
   font-family: var(--font-body);
-  color: var(--color-text);
-  background-color: var(--color-background);
-    margin: 0;
+  background-color: var(--color-background-light);
+  margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
-  color: var(--color-text);
+  color: var(--color-text-light);
 }
 
 .navigation h1 {
@@ -17,5 +16,38 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p, li, a, span {
+  color: var(--color-text);
   font-family: var(--font-body);
+}
+
+.cta-button {
+  background-color: var(--color-primary);
+  color: var(--color-button-text);
+  padding: 0.85rem 2rem;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1.125rem;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.cta-button:hover {
+  background-color: var(--color-primary-dark);
+  transform: translateY(-2px);
+}
+
+button {
+  background-color: var(--color-primary);
+  border: 0;
+  color: var(--color-button-text);
+  padding: 0.85rem 2rem;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1.125rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+button:hover {
+  background-color: var(--color-primary-dark);
 }

@@ -1,0 +1,90 @@
+[
+  {
+    "id": "kundreskontra",
+    "title": "Kundreskontra",
+    "shortDesc": "Vi hanterar dina kundfakturor och bevakar betalningar.",
+    "longDesc": "Vi registrerar och hanterar dina kundfakturor med noggrannhet och precision. Vi bevakar alla betalningar, skickar påminnelser vid förfallna fakturor och kan även hantera inbetalningar åt dig. Vårt mål är att säkerställa en smidig och korrekt kundreskontra så att ditt företag alltid har en stabil likviditet och god kontroll över sina inkomster.",
+    "keyPoints": [
+      "Registrering och hantering av kundfakturor",
+      "Bevakning av betalningar och påminnelser",
+      "Hantera inbetalningar och säkerställa likviditet"
+    ]
+  },
+  {
+    "id": "leverantorsreskontra",
+    "title": "Leverantörsreskontra",
+    "shortDesc": "Vi sköter dina leverantörsfakturor och betalningar.",
+    "longDesc": "Vi registrerar och hanterar dina leverantörsfakturor, och kan sköta betalningar om du önskar. Vår tjänst ser till att dina leverantörer alltid får betalt i tid, vilket stärker affärsrelationerna och minimerar risken för förseningsavgifter. Vi hjälper dig att hålla en tydlig översikt över dina utgifter och leverantörsskulder.",
+    "keyPoints": [
+      "Registrering av leverantörsfakturor",
+      "Betalning och uppföljning av leverantörer",
+      "Översikt över utgifter och skulder"
+    ]
+  },
+  {
+    "id": "bokforing",
+    "title": "Bokföring",
+    "shortDesc": "Vi tar hand om den löpande bokföringen.",
+    "longDesc": "Vi tar hand om all löpande bokföring, inklusive moms, arbetsgivardeklarationer och annan nödvändig rapportering. Vårt team säkerställer att alla transaktioner är korrekt registrerade och att du alltid har uppdaterad information om företagets ekonomi. Vi arbetar för att göra bokföringen enkel och korrekt, så att du kan fokusera på att utveckla ditt företag.",
+    "keyPoints": [
+      "Löpande bokföring med moms och arbetsgivardeklarationer",
+      "Korrekt och uppdaterad ekonomisk information",
+      "Fokus på enkelhet och korrekthet"
+    ]
+  },
+  {
+    "id": "loner",
+    "title": "Löner",
+    "shortDesc": "Fullständig lönehantering för dina anställda.",
+    "longDesc": "Vi tar hand om hela lönehanteringen för dina anställda – från lönebesked och skatteavdrag till arbetsgivardeklarationer och kontrolluppgifter. Vi ser till att löner alltid betalas ut korrekt och i tid, vilket minskar administrativ stress och säkerställer att alla lagkrav uppfylls. Vi anpassar lönehanteringen efter ditt företags behov och erbjuder rådgivning för optimala lösningar.",
+    "keyPoints": [
+      "Fullständig lönehantering och lönebesked",
+      "Korrekt och punktlig utbetalning",
+      "Rådgivning för optimala lösningar"
+    ]
+  },
+  {
+    "id": "bokslut",
+    "title": "Bokslut",
+    "shortDesc": "Vi upprättar tydliga bokslut för ditt företag.",
+    "longDesc": "Vi upprättar bokslut för ditt företag med fokus på tydlighet och korrekthet. Även om du själv hanterar den löpande bokföringen, går vi igenom alla siffror, gör nödvändiga justeringar och förklarar resultatet på ett lättförståeligt sätt. Vårt mål är att ge dig full insyn i företagets ekonomiska ställning och stöd i strategiska beslut.",
+    "keyPoints": [
+      "Upprättande av bokslut med tydlighet",
+      "Genomgång och justering av siffror",
+      "Stöd för strategiska beslut"
+    ]
+  },
+  {
+    "id": "arsredovisning",
+    "title": "Årsredovisning",
+    "shortDesc": "Vi sammanställer årsredovisningen korrekt och tydligt.",
+    "longDesc": "Vi sammanställer årsredovisningen enligt gällande regelverk och ser till att alla uppgifter är korrekta och kompletta. Vi går igenom resultat och balansräkningar med dig, förklarar siffrorna och ger råd för framtida ekonomiska beslut. Vår tjänst hjälper dig att uppfylla lagkrav och samtidigt få en tydlig bild av företagets prestation under året.",
+    "keyPoints": [
+      "Sammanställning enligt regelverk",
+      "Förklaring av resultat och balansräkningar",
+      "Råd för framtida ekonomiska beslut"
+    ]
+  },
+  {
+    "id": "deklaration",
+    "title": "Deklaration & Skatter",
+    "shortDesc": "Vi hjälper dig med deklaration och skatteplanering.",
+    "longDesc": "Vi hjälper dig med inkomstdeklaration, momsdeklaration och andra skattefrågor, och säkerställer att allt lämnas in korrekt och i tid. Dessutom erbjuder vi skatteplanering och rådgivning för att optimera företagets ekonomi, minimera skatter och maximera likviditeten. Vi guidar dig genom komplexa regler och skapar trygghet kring företagets skattehantering.",
+    "keyPoints": [
+      "Inkomst- och momsdeklaration",
+      "Skatteplanering och rådgivning",
+      "Optimera ekonomi och likviditet"
+    ]
+  },
+  {
+    "id": "pappersarbete",
+    "title": "Administration & Pappersarbete",
+    "shortDesc": "Vi tar hand om ditt administrativa arbete.",
+    "longDesc": "Vi tar hand om allt administrativt arbete som tar tid och energi från dig, inklusive dokumenthantering, rapportering och rutinuppgifter. Med vår hjälp kan du fokusera på att driva och utveckla ditt företag, samtidigt som vi säkerställer att allt pappersarbete är korrekt och uppdaterat. Vi skapar ordning och struktur för att ge dig kontroll över din administration.",
+    "keyPoints": [
+      "Dokumenthantering och rapportering",
+      "Struktur och ordning i administrationen",
+      "Spara tid och energi för företagsutveckling"
+    ]
+  }
+]
