@@ -1,16 +1,15 @@
 <template>
   <section class="footer">
     <div>
-      <h1>Easy's Redovisning</h1>
-    </div>
-    <div>
-      <ul class="footer-links">
-        <li>Privacy Policy</li>
-        <li>Terms Of Services</li>
-      </ul>
+      <h1 class="footer-logo"><router-link to="/">Easy's Redovisning</router-link></h1>
     </div>
     <div>
       <span>© 2025 Easy's Redovisning</span>
+    </div>
+    <div>
+      <ul class="footer-links">
+        <li><router-link to="/integritetspolicy">Integritetspolicy</router-link></li>
+      </ul>
     </div>
   </section>
 </template>
@@ -32,5 +31,18 @@
     display: flex;
     list-style-type: none;
     gap:20px;
+}
+.footer-links li a {
+  text-decoration: none;
+}
+.footer-links li a:hover {
+  text-decoration: underline;
+}
+.footer-logo a{
+text-decoration: none;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.75rem;
+  letter-spacing: -0.5px;
 }
 </style>
