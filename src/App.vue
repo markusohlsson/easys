@@ -18,12 +18,18 @@ const blueBtnRoutes = ['Home', 'About'];
     }"
     />
   <div :class="{ 'white-bg': whiteBgRoutes.includes(route.name) }">
-  <router-view />
+      <router-view />
   </div>
   <Footer />
 </template>
 
 <style scoped>
+.white-bg,
+.dark-nav,
+.blue-btns,
+#app > div {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
 .white-bg {
   background-color: #FFF;
 }
