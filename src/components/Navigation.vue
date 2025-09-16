@@ -1,7 +1,10 @@
 <script setup>
 import { ref, onMounted, onUnmounted, computed } from 'vue'
 import { BarChart, Menu, X, Home, Layers, Info, HelpCircle, Contact} from 'lucide-vue-next';
+import { useRoute } from 'vue-router';
+const route = useRoute();
 
+const darkNav = ['Home'];
 const width = ref(window.innerWidth)
 const menuOpen = ref(false);
 
@@ -18,15 +21,23 @@ onUnmounted(() => {
 })
 
 const isMobile = computed(() => width.value < 768)
+
+const navClass = computed(() => {
+  if (menuOpen.value && darkNav.includes(route.name)) {
+    return 'open';
+  } else {
+    return 'closed';
+  }
+});
 </script>
 
 <template>
-  <nav class="navigation" v-if="isMobile" :class="menuOpen ? 'open' : 'close'">
+  <nav class="navigation" v-if="isMobile" :class="navClass">
   <section class="navigation-section logo">
           <h1 class="nav-logo"><BarChart class="nav-logo-icon"/><router-link to="/" >Easy's Redovisning</router-link></h1>
   </section>
   <section>
-      <div>
+      <div class="icon-container">
         <Menu v-if="!menuOpen" @click="menuOpen = true" class="menu-icon"/>
         <X v-else @click="menuOpen = false" class="menu-icon"/>
       </div>
@@ -192,6 +203,10 @@ const isMobile = computed(() => width.value < 768)
   }
   .open {
     background: rgba(15, 23, 42, 0.473) !important; 
+  }
+  .icon-container {
+    height: 30px;
+    width:30px;
   }
 }
 </style>
