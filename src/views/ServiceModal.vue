@@ -220,4 +220,18 @@ watch(() => props.visible, async (val) => {
   opacity: 0.07;      /* Subtle */
   color: #0f172A;     /* Lighter color */
 }
+
+@media screen and (max-width: 768px) {
+    .modal {
+    width: 85vw !important;
+    height: auto; /* Let it grow based on content */
+    max-height: 90vh; /* Prevent overflow */
+    border-radius: 12px;
+    padding: 1rem;
+  }
+
+  .modal p {
+    width: 100%;
+  }
+}
 </style>

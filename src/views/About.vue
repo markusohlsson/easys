@@ -73,4 +73,40 @@
     line-height: 1.7;
     color: var(--color-text);
 }
+@media screen and (max-width: 768px) {
+    .container {
+    grid-template-columns: 1fr;   /* Stack text + image */
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+  }
+  .hero-container {
+    padding-top: 2rem;
+  }
+
+  .container-text {
+    order: 2;
+  }
+  .container-text p {
+    font-size: 1rem;      /* Slightly smaller */
+    line-height: 1.6;
+  }
+
+  .container-image img {
+    order: 1;
+    border-radius: 0.5rem;
+    max-height: 300px;    /* Prevent giant image */
+    object-fit: cover;
+  }
+
+  .text-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .text-container p {
+    font-size: 1rem;
+    padding-inline: 2rem;
+  }
+  
+
+}
 </style>

@@ -82,4 +82,12 @@ defineProps({
   color: var(--color-text);
 }
 
+@media screen and (max-width: 768px) {
+  .service-card {
+    padding: 1rem;
+  }
+  .service-card h3 {
+    font-size: 1.4rem;
+  }
+}
 </style>

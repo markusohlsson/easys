@@ -33,7 +33,8 @@ defineProps({
     padding: 2rem;
     box-shadow: 0 4px 12px rgb(0 0 0 / 5%);
     background-color: #F8FAFC;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 }
 .review-icon {
     color: var(--color-primary);

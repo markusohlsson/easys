@@ -48,4 +48,10 @@ onMounted(() => {
     gap: 2rem;
     padding-bottom: 2rem;
 }
+@media screen and (max-width:768px) {
+  .review-section {
+    padding: 2rem;
+    grid-template-columns: 1fr; 
+  }
+}
 </style>

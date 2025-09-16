@@ -30,7 +30,7 @@ import { Phone, Mail, MapPin, Clock } from 'lucide-vue-next';
                 </div>
                 <div class="details-info">  
                     <h3 class="details-title">Telefon</h3>
-                    <p class="details-text">070-579 90 50</p>
+                    <p class="details-text"><a href="tel:+46705799050">070-579 90 50</a></p>
                 </div>
 
 
@@ -193,6 +193,53 @@ form textarea:focus {
 }
 .details-text a {
     text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    grid-template-columns: 1fr; /* stack into one column */
+    gap: 60px;
+  }
+
+  .left h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .left p {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  form {
+    width: 100%;
+  }
+  .right-contact {
+    width: 100%;
+  }
+
+  .contact-details {
+    display: grid;
+    grid-template-columns: 40px 1fr; /* icon column + text */
+    align-items: start;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .contact-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+
+  .contact-details {
+    justify-content: center;
+  }
+
+  .map-container {
+    margin-top: 2rem;
+  }
 }
 
 </style>

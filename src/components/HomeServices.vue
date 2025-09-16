@@ -96,4 +96,17 @@ function expandService(id, event) {
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .services-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* single column */
+    gap: 2rem;
+  }
+
+  /* Reset all cards to just span the single column */
+  .card-large:nth-child(1) { grid-column: 1;}
+  .card-small:nth-child(2) { grid-column: 1;}
+  .card-small:nth-child(3) { grid-column: 1;}
+  .card-large:nth-child(4) { grid-column: 1;}
+}
 </style>

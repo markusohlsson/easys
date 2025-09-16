@@ -147,4 +147,25 @@ import Reviews from '../components/Reviews.vue';
 .bl-cta {
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .bl-image img {
+    max-width: 200px;
+    height: auto;
+  }
+  .bl-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bl-intro h2 {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .bl-intro p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+}
 </style>

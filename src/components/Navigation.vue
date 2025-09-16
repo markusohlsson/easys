@@ -1,9 +1,47 @@
 <script setup>
-import { BarChart } from 'lucide-vue-next';
+import { ref, onMounted, onUnmounted, computed } from 'vue'
+import { BarChart, Menu, X, Home, Layers, Info, HelpCircle, Contact} from 'lucide-vue-next';
+
+const width = ref(window.innerWidth)
+const menuOpen = ref(false);
+
+function handleResize() {
+  width.value = window.innerWidth
+}
+
+onMounted(() => {
+  window.addEventListener('resize', handleResize)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('resize', handleResize)
+})
+
+const isMobile = computed(() => width.value < 768)
 </script>
 
 <template>
-  <nav class="navigation">
+  <nav class="navigation" v-if="isMobile" :class="menuOpen ? 'open' : 'close'">
+  <section class="navigation-section logo">
+          <h1 class="nav-logo"><BarChart class="nav-logo-icon"/><router-link to="/" >Easy's Redovisning</router-link></h1>
+  </section>
+  <section>
+      <div>
+        <Menu v-if="!menuOpen" @click="menuOpen = true" class="menu-icon"/>
+        <X v-else @click="menuOpen = false" class="menu-icon"/>
+      </div>
+      <transition name="slide-fade">
+        <ul class="navigation-links" v-if="menuOpen" :class="menuOpen ? 'open' : 'closed'">
+          <li><router-link to="/"><Home />Hem</router-link></li>
+          <li><router-link to="/tjanster"><Layers/>Tjänster</router-link></li>
+          <li><router-link to="/om"><Info/>Om</router-link></li>
+          <li><router-link to="/faq"><HelpCircle/>FAQ</router-link></li>
+          <li><router-link to="/kontakt"><Contact />Kontakta oss</router-link></li>
+        </ul>
+      </transition>
+  </section>
+  </nav>
+  <nav class="navigation" v-else>
     <section class="navigation-section logo">
       <h1 class="nav-logo"><BarChart class="nav-logo-icon"/>Easy's Redovisning</h1>
     </section>
@@ -22,6 +60,7 @@ import { BarChart } from 'lucide-vue-next';
       <router-link to="/kontakt" class="cta-button">Kontakta oss</router-link>
     </section>
   </nav>
+
 </template>
 
 <style scoped>
@@ -101,5 +140,58 @@ import { BarChart } from 'lucide-vue-next';
 
 .navigation-links li a:hover {
   color: var(--color-primary);
+}
+
+@media screen and (max-width: 768px) {
+  .slide-fade-enter-active,
+  .slide-fade-leave-active {
+    transition: all 0.3s ease;
+  }
+
+  .slide-fade-enter-from,
+  .slide-fade-leave-to {
+    transform: translateY(-25%);
+    opacity: 0;
+  }
+  .navigation-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    width:100%;
+    text-align: center;
+    gap: 10px;
+    align-items: center;
+    background: rgba(15, 23, 42, 0.473); 
+    backdrop-filter: blur(4px);
+    padding-top: 20px;
+    padding-bottom:20px;
+  }
+  .navigation-links li {
+    width: 100%;
+  }
+  .navigation-links li a {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0.5rem;
+  }
+  .menu-icon {
+    height:30px;
+    width:30px;
+    color: var(--color-primary);
+  }
+  .navigation {
+    padding: 0rem 1.5rem;
+  }
+  .nav-logo a {
+    color:inherit;
+    text-decoration: none;
+  }
+  .open {
+    background: rgba(15, 23, 42, 0.473) !important; 
+  }
 }
 </style>

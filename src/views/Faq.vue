@@ -120,4 +120,22 @@ details p {
     line-height: 1.7;
     color: var(--color-text);
 }
+
+@media screen and (max-width: 768px) {
+  .text-container h1 {
+  font-size: 2rem;
+}
+
+.text-container p {
+  font-size: 1rem;
+  padding: 1rem;
+}
+summary h3 {
+  font-size: 0.9rem;
+}
+details {
+  padding: 0.6rem;
+  font-size: 0.9rem;
+}
+}
 </style>

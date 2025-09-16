@@ -116,4 +116,30 @@ watch(
     line-height: 1.7;
     color: var(--color-text);
 }
+
+@media screen and (max-width: 768px) {
+
+.text-container h1 {
+  font-size: 2.5rem;
+}
+
+.text-container p {
+  font-size: 1rem;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* 5-column base */
+  gap: 1.5rem;
+}
+
+.card.small {
+  grid-column: 1;
+}
+
+.card.large {
+  grid-column: 1;
+}
+}
+
+
 </style>
