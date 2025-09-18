@@ -1,11 +1,10 @@
+<script setup lang="ts">
+import HeroSection from '../components/HeroSection.vue';
+
+</script>
+
 <template>
-    <section class="hero-container">
-        <div class="text-container">
-            <h1>Integritetspolicy</h1>
-            <p>Senast uppdaterad: 2025-09-15</p>
-            <p>På Easys Redovisning värnar vi om din integritet och skyddar dina personuppgifter. Denna policy förklarar vilka uppgifter vi samlar in, varför vi samlar in dem och hur de används.</p>
-        </div>
-    </section>
+    <HeroSection :title="'Integritetspolicy'" :description="'Senast uppdaterad: 2025-09-15'" :extraDescription="'På Easys Redovisning värnar vi om din integritet och skyddar dina personuppgifter. Denna policy förklarar vilka uppgifter vi samlar in, varför vi samlar in dem och hur de används.'" />
     <main>
         <section>
             <h2>Uppgifter vi samlar in</h2>
@@ -64,31 +63,9 @@ main {
     padding-top:40px;
     padding-bottom:100px;
 }
-.hero-container {
-    height:60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-background-dark);
-    color: var(--color-text-light)
-}
-.text-container {
-    max-width: 1000px;
-    text-align: center;
-}
-
-.text-container h1 {
-    font-family: var(--font-heading);
-    font-size: 3rem; /* slightly larger for emphasis */
-    font-weight: 700;
-    margin-bottom: 1rem;
-    color: var(--color-text-light);
-}
-
-.text-container p {
-    font-family: var(--font-body);
-    font-size: 1.25rem;
-    line-height: 1.7;
-    color: var(--color-text);
+@media screen and (max-width: 768px) {
+    main {
+        width: 90%;
+    }
 }
 </style>

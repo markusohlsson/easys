@@ -2,16 +2,16 @@
 
 
 :root {
-  --color-background-dark: #0F172A;  /* Dark background */
-  --color-background-light: #1E293B; /* Light background sections */
-  --color-surface: #1E293B;          /* Cards / surfaces on dark bg */
-  --color-primary: #D4AF37;          /* Buttons, icons, links */
-  --color-primary-dark: #B8912C;     /* Hover / active state (slightly darker gold) */
-  --color-text: #D1D5DB;             /* Accent text / body text on dark */
-  --color-text-light: #FFFFFF;       /* Titles / text on dark background */
-  --color-button-text: #0F172A;      /* Text on buttons */
-  --color-icon-bg: #334155;          /* Background behind icons */
-  --color-border: #D1D5DB;           /* Subtle borders */
+  --color-background-dark: #122118;  /* Dark background */
+  --color-background-light: #1A2E23; /* Light background sections */
+  --color-surface: #1A2E23;          /* Cards / surfaces on dark bg */
+  --color-primary: #38E07B;           /* Buttons, icons, links */
+  --color-primary-dark: #2EBF5F;      /* Hover / active state */
+  --color-text: #96C5A9;              /* Accent text / body text on dark */
+  --color-text-light: #FFFFFF;        /* Titles / text on dark background */
+  --color-button-text: #122118;       /* Text on buttons (if needed) */
+  --color-icon-bg: #264532;           /* Background behind icons */
+  --color-border: #96C5A9;            /* Optional borders for premium look */
   
   /* ===== Typography ===== */
   --font-heading: 'Spline Sans', sans-serif;

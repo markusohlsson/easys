@@ -32,7 +32,7 @@ defineProps({
     border-radius: 1rem;
     padding: 2rem;
     box-shadow: 0 4px 12px rgb(0 0 0 / 5%);
-    background-color: #F8FAFC;
+    background-color: var(--color-background-dark);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 }
@@ -42,6 +42,7 @@ defineProps({
     width: 30px;
 }
 .review-description {
+    color: var(--color-text-light);
     padding: 10px;
 }
 .review-author {

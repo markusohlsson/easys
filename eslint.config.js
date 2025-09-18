@@ -6,7 +6,6 @@ import markdown from "@eslint/markdown";
 import { defineConfig } from "eslint/config";
 
 export default defineConfig([
-  // JavaScript files
   {
     files: ["**/*.{js,mjs,cjs}"],
     plugins: { js },
@@ -18,7 +17,6 @@ export default defineConfig([
     }
   },
 
-  // Vue files
 {
   files: ["**/*.vue"],
   plugins: { vue: pluginVue },
@@ -30,7 +28,7 @@ export default defineConfig([
   }
   },
 
-  // JSON files
+
   {
     files: ["**/*.json"],
     plugins: { json },
@@ -50,7 +48,6 @@ export default defineConfig([
     extends: ["json/recommended"]
   },
 
-  // Markdown files
   {
     files: ["**/*.md"],
     plugins: { markdown },

@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Vad är ert företag specialiserat på?",
+        "description": "Vi erbjuder bokföring, skatteplanering och ekonomisk rådgivning för små och medelstora företag."
+    },
+    {
+        "title": "Hur kan jag boka en konsultation?",
+        "description":"Du kan boka en konsultation via vårt kontaktformulär på hemsidan eller ringa oss direkt på 012-345678."
+    },
+    {
+        "title":"Vilka tjänster erbjuder ni?",
+        "description":"Vi erbjuder tjänster som bokföring, löneadministration, deklaration och ekonomisk rådgivning anpassad efter småföretag."
+    },
+    {
+        "title": "Hur snabbt kan jag få hjälp?",
+        "description": "Vi försöker alltid återkoppla samma dag eller inom 24 timmar beroende på ärendets art."
+    }
+]

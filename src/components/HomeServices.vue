@@ -56,7 +56,7 @@ function expandService(id, event) {
 
 <style scoped>
 .services {
-  background-color: var(--color-background); /* light beige */
+  background-color: var(--color-background);
   color: var(--color-text);
   padding: 4rem 2rem;
   font-family: var(--font-body);
@@ -99,11 +99,10 @@ function expandService(id, event) {
 @media screen and (max-width: 768px) {
   .services-grid {
     display: grid;
-    grid-template-columns: 1fr; /* single column */
+    grid-template-columns: 1fr;
     gap: 2rem;
   }
 
-  /* Reset all cards to just span the single column */
   .card-large:nth-child(1) { grid-column: 1;}
   .card-small:nth-child(2) { grid-column: 1;}
   .card-small:nth-child(3) { grid-column: 1;}

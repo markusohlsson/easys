@@ -5,6 +5,7 @@ import { serviceIcons } from '../data/icons';
 import { ref, watch } from 'vue';
 import ServiceModal from './ServiceModal.vue';
 import { useRouter, useRoute } from 'vue-router';
+import HeroSection from '../components/HeroSection.vue';
 
 const router = useRouter();
 const route = useRoute();
@@ -21,7 +22,6 @@ function openService(id, event) {
   selectedService.value = services.find((service) => service.id === id);
   showModal.value = true;
 
-  // navigate to /tjanster/:id
   router.push({ name: 'SelectedService', params: { id } });
 }
 
@@ -41,12 +41,7 @@ watch(
 </script>
 
 <template>
-<section class="hero-container">
-    <div class="text-container">
-        <h1>Våra Tjänster</h1>
-        <p>Mångårig erfarenhet av redovisning och allt pappersarbete som du behöver hjälp med i ditt företag!</p>
-    </div>
-</section>
+<HeroSection :title="'Våra Tjänster'" :description="'Mångårig erfarenhet av redovisning och allt pappersarbete som du behöver hjälp med i ditt företag!'" />
 <section class="container">
     <section class="services-grid">
         <Card
@@ -69,15 +64,14 @@ watch(
     width: 100%;
 }
 .services-grid {
-    padding:4rem 2rem;
+  padding:4rem 2rem;
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5-column base */
+  grid-template-columns: repeat(5, 1fr); 
   gap: 1.5rem;
   max-width: 1100px;
   margin: 0 auto;
   align-items: stretch;
 }
-
 .card.small {
   grid-column: span 2;
   grid-row: span 2;
@@ -88,49 +82,7 @@ watch(
   grid-row: span 2;
 }
 
-
-.hero-container {
-    height:60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-background-dark);
-    color: var(--color-text-light)
-}
-.text-container {
-    max-width: 1000px;
-    text-align: center;
-}
-
-.text-container h1 {
-    font-family: var(--font-heading);
-    font-size: 3rem; /* slightly larger for emphasis */
-    font-weight: 700;
-    margin-bottom: 1rem;
-    color: var(--color-text-light);
-}
-
-.text-container p {
-    font-family: var(--font-body);
-    font-size: 1.25rem;
-    line-height: 1.7;
-    color: var(--color-text);
-}
-
 @media screen and (max-width: 768px) {
-
-.text-container h1 {
-  font-size: 2.5rem;
-}
-
-.text-container p {
-  font-size: 1rem;
-}
-.services-grid {
-  display: grid;
-  grid-template-columns: 1fr; /* 5-column base */
-  gap: 1.5rem;
-}
 
 .card.small {
   grid-column: 1;
@@ -140,6 +92,4 @@ watch(
   grid-column: 1;
 }
 }
-
-
 </style>

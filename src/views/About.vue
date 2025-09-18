@@ -1,10 +1,10 @@
+<script setup lang="ts">
+import HeroSection from '../components/HeroSection.vue';
+
+</script>
+
 <template>
-    <section class="hero-container">
-        <div class="text-container">
-            <h1>Om Easy's Redovisning</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit facere quidem totam non aliquam rem explicabo mollitia, dicta quod vero reiciendis, nesciunt deleniti provident molestiae aperiam pariatur temporibus tempore accusamus.</p>
-        </div>
-    </section>
+    <HeroSection :title="`Om Easy's Redovisning`" :description="'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit facere quidem totam non aliquam rem explicabo mollitia, dicta quod vero reiciendis, nesciunt deleniti provident molestiae aperiam pariatur temporibus tempore accusamus.'" />
     <div class="container-wrap">
         <section class="container">
             <div class="container-text">
@@ -23,9 +23,9 @@
 <style scoped>
 .container {
   display: grid;
-  grid-template-columns: 2fr 1fr; /* text 2/3, image 1/3 */
-  gap: 2rem; /* spacing between text and image */
-  align-items: start; /* align items to the top */
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  align-items: start;
   max-width: 1100px;
   margin: 0 auto;
   padding: 4rem 2rem;
@@ -42,40 +42,13 @@
 .container-image img {
   width: 100%;
   height: auto;
-  border-radius: 0.75rem; /* optional: slightly rounded corners */
+  border-radius: 0.75rem;
   object-fit: cover;
 }
 
-.hero-container {
-    height:60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-background-dark);
-    color: var(--color-text-light)
-}
-.text-container {
-    max-width: 1000px;
-    text-align: center;
-}
-
-.text-container h1 {
-    font-family: var(--font-heading);
-    font-size: 3rem; /* slightly larger for emphasis */
-    font-weight: 700;
-    margin-bottom: 1rem;
-    color: var(--color-text-light);
-}
-
-.text-container p {
-    font-family: var(--font-body);
-    font-size: 1.25rem;
-    line-height: 1.7;
-    color: var(--color-text);
-}
 @media screen and (max-width: 768px) {
     .container {
-    grid-template-columns: 1fr;   /* Stack text + image */
+    grid-template-columns: 1fr;
     gap: 1.5rem;
     padding: 2rem 1rem;
   }
@@ -87,14 +60,14 @@
     order: 2;
   }
   .container-text p {
-    font-size: 1rem;      /* Slightly smaller */
+    font-size: 1rem;
     line-height: 1.6;
   }
 
   .container-image img {
     order: 1;
     border-radius: 0.5rem;
-    max-height: 300px;    /* Prevent giant image */
+    max-height: 300px;
     object-fit: cover;
   }
 

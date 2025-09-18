@@ -1,0 +1,21 @@
+[
+    {
+        "title":"Telefon",
+        "text":"070-579 90 50",
+        "link":"tel:+46705799050",
+        "icon":"Phone"
+    },{
+        "title":"E-post",
+        "text":"info@easys.se",
+        "link":"mailto:info@easys.se",
+        "icon":"Mail"
+    },{
+        "title":"Adress",
+        "text":"Valsättravägen 27, 184 94 Åkersberga",
+        "icon":"MapPin"
+    },{
+        "title":"Öppettider",
+        "text":"Mån-Fre 9:00-17:00",
+        "icon":"Clock"
+    }
+]

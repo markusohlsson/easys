@@ -88,7 +88,7 @@ const navClass = computed(() => {
 .navigation-links li a::after {
   content: "";
   position: absolute;
-  bottom: -4px; /* space below text */
+  bottom: -4px;
   left: 50%;
   transform: translateX(-50%) scaleX(0);
   transform-origin: center;
@@ -98,7 +98,7 @@ const navClass = computed(() => {
   transition: transform 0.3s ease;
 }
 .navigation-links li a:hover::after {
-  transform: translateX(-50%) scaleX(1); /* expand underline */
+  transform: translateX(-50%) scaleX(1);
 }
 
 .divider {
@@ -117,7 +117,7 @@ const navClass = computed(() => {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2.5rem; /* top & bottom padding */
+  padding: 1rem 2.5rem;
 }
 
 .navigation-links .router-link-active:not(.cta-button) {
@@ -202,7 +202,7 @@ const navClass = computed(() => {
     text-decoration: none;
   }
   .open {
-    background: rgba(15, 23, 42, 0.473) !important; 
+    background: #1221188e !important; 
   }
   .icon-container {
     height: 30px;

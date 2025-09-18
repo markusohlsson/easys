@@ -47,12 +47,11 @@ const isClosing = ref(false);
 
 function close() {
   if (!props.startPosition) {
-    emit('close'); // fallback
+    emit('close');
     return;
   }
 
-  // Start "shrink back" animation
-  const modalEl = document.querySelector('.modal'); // or use ref
+  const modalEl = document.querySelector('.modal');
   const { top, left, width, height } = props.startPosition;
 
   modalEl.style.transition = 'all 0.4s ease';
@@ -63,7 +62,6 @@ function close() {
   modalEl.style.transform = 'none';
   modalEl.style.opacity = 0.1;
 
-  // Wait for transition to finish, then emit close
   modalEl.addEventListener(
     'transitionend',
     () => {
@@ -90,7 +88,6 @@ const modalStyle = ref({ ...startStyle.value });
 watch(() => props.visible, async (val) => {
   if (val) {
     if (props.startPosition) {
-      // Animate from card
       modalStyle.value = { ...startStyle.value };
 
       await nextTick();
@@ -108,7 +105,6 @@ watch(() => props.visible, async (val) => {
         };
       }, 20);
     } else {
-      // Direct route load fallback (open immediately with final style)
       modalStyle.value = {
         top: '50%',
         left: '50%',
@@ -210,22 +206,22 @@ watch(() => props.visible, async (val) => {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  pointer-events: none; /* Clicks go through */
+  pointer-events: none;
   z-index: 0;
 }
 
 .icon-bg .icon-svg {
-  width: 12rem;       /* Size of the background icon */
+  width: 12rem; 
   height: 12rem;
-  opacity: 0.07;      /* Subtle */
-  color: #0f172A;     /* Lighter color */
+  opacity: 0.07;     
+  color: #0f172A;    
 }
 
 @media screen and (max-width: 768px) {
     .modal {
     width: 85vw !important;
-    height: auto; /* Let it grow based on content */
-    max-height: 90vh; /* Prevent overflow */
+    height: auto;
+    max-height: 90vh;
     border-radius: 12px;
     padding: 1rem;
   }

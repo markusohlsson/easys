@@ -40,7 +40,7 @@ defineProps({
   border-radius: 1rem;
   padding: 2rem;
   box-shadow: 0 4px 12px rgb(0 0 0 / 5%);
-  text-align: left; /* align left for icon + title layout */
+  text-align: left; 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -53,7 +53,7 @@ defineProps({
 .title-wrapper {
   display: flex;
   align-items: center;
-  gap: 1rem; /* space between icon and title */
+  gap: 1rem; 
   margin-bottom: 1rem;
 }
 

@@ -1,6 +1,6 @@
 <template>
-  <section class="hero">
-    <div class="hero-content">
+    <section class="hero">
+      <div class="hero-content">
       <h1>Easy's Redovisning</h1>
       <p>Din trygga partner inom bokföring, bokslut och skatterådgivning sedan 1994.</p>
       <router-link
@@ -33,7 +33,6 @@
   position: absolute;
   inset: 0;
 
-  /* darker overlay for readability */
   background: rgb(0 0 0 / 55%);
   z-index: 0;
 }
@@ -43,12 +42,12 @@
   z-index: 1;
   color: var(--color-text-light);
   max-width: 800px;
-  padding: 1.5rem;
+  padding: 1.5rem;  
 }
 
 .hero-content h1 {
   font-family: var(--font-heading);
-  font-size: clamp(2.5rem, 5vw, 4rem); /* responsive */
+  font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 800;
   margin-bottom: 1rem;
   color: #fff;
