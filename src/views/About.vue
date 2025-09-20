@@ -4,20 +4,26 @@ import HeroSection from '../components/HeroSection.vue';
 </script>
 
 <template>
-    <HeroSection :title="`Om Easy's Redovisning`" :description="'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit facere quidem totam non aliquam rem explicabo mollitia, dicta quod vero reiciendis, nesciunt deleniti provident molestiae aperiam pariatur temporibus tempore accusamus.'" />
-    <div class="container-wrap">
-        <section class="container">
-            <div class="container-text">
-                <h2>Vår Historia</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore repellat repudiandae possimus fuga amet ullam sapiente maxime nesciunt doloribus et laudantium velit ipsam, natus perferendis animi, tenetur, iste error. Animi.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum doloribus aliquid minus doloremque mollitia rem ut, est sapiente eum consequuntur earum magnam nam officia veniam saepe. Tempore amet consectetur excepturi.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam tempore temporibus inventore excepturi dicta minus perspiciatis molestiae corrupti, veniam repellendus accusamus omnis eligendi ad magni ratione dolor totam nemo aperiam?</p>
-            </div>
-            <div class="container-image">
-                <img src="../assets/img/about.png" alt="">
-            </div>
-        </section>
-    </div>
+  <HeroSection
+    :title="`Om Easy's Redovisning`"
+    :description="'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit facere quidem totam non aliquam rem explicabo mollitia, dicta quod vero reiciendis, nesciunt deleniti provident molestiae aperiam pariatur temporibus tempore accusamus.'"
+  />
+  <div class="container-wrap">
+    <section class="container">
+      <div class="container-text">
+        <h2>Vår Historia</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore repellat repudiandae possimus fuga amet ullam sapiente maxime nesciunt doloribus et laudantium velit ipsam, natus perferendis animi, tenetur, iste error. Animi.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum doloribus aliquid minus doloremque mollitia rem ut, est sapiente eum consequuntur earum magnam nam officia veniam saepe. Tempore amet consectetur excepturi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam tempore temporibus inventore excepturi dicta minus perspiciatis molestiae corrupti, veniam repellendus accusamus omnis eligendi ad magni ratione dolor totam nemo aperiam?</p>
+      </div>
+      <div class="container-image">
+        <img
+          src="../assets/img/about.png"
+          alt=""
+        >
+      </div>
+    </section>
+  </div>
 </template>
 
 <style scoped>

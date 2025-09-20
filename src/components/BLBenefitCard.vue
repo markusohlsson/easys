@@ -1,19 +1,17 @@
 <template>
-        <div class="benefit">
-          <h3>{{ title }}</h3>
-          <p>{{ description }}</p>
-        </div>
+  <div class="benefit">
+    <h3>{{ title }}</h3>
+    <p>{{ description }}</p>
+  </div>
 </template>
 <script setup>
 defineProps({
     title: {
         type: String,
-        required: true,
         default: '',
     },
     description: {
         type: String,
-        required: true,
         default: '',
     }
 })

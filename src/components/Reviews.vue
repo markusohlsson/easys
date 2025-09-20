@@ -1,17 +1,11 @@
-<script setup lang="ts">
+<script setup>
 import ReviewCard from './ReviewCard.vue';
 import reviews from '../data/reviews.json';
 import { ref, onMounted } from 'vue';
 
-interface Review {
-  description: string;
-  author: string;
-  company: string;
-}
+const selectedReviews = ref([]);
 
-const selectedReviews = ref<Review[]>([]);
-
-function getRandomReviews(arr: Review[], count: number) {
+function getRandomReviews(arr, count) {
   const shuffled = [...arr].sort(() => 0.5 - Math.random());
   return shuffled.slice(0, count);
 }
@@ -22,10 +16,10 @@ onMounted(() => {
 </script>
 
 <template>
-    <section class="review-text-section">
+  <section class="review-text-section">
     <h2>Vad våra kunder säger</h2>
     <p>Vi är stolta över att ha förtjänat förtroendet från företag av alla storlekar</p>
-    </section>
+  </section>
   <section class="review-section">
     <ReviewCard 
       v-for="review in selectedReviews" 

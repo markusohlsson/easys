@@ -41,21 +41,31 @@ watch(
 </script>
 
 <template>
-<HeroSection :title="'Våra Tjänster'" :description="'Mångårig erfarenhet av redovisning och allt pappersarbete som du behöver hjälp med i ditt företag!'" />
-<section class="container">
+  <HeroSection
+    :title="'Våra Tjänster'"
+    :description="'Mångårig erfarenhet av redovisning och allt pappersarbete som du behöver hjälp med i ditt företag!'"
+  />
+  <section class="container">
     <section class="services-grid">
-        <Card
-            v-for="(service, index) in services"
-            :key="service.id"
-            :service="service"
-            :icon="serviceIcons[service.id]"
-            @click="openService(service.id, $event)"
-            class="card"
-            :class="index % 4 === 0 || index % 4 === 3 ? 'large' : 'small'" 
-        />
+      <Card
+        v-for="(service, index) in services"
+        :key="service.id"
+        :service="service"
+        :icon="serviceIcons[service.id]"
+        class="card"
+        :class="index % 4 === 0 || index % 4 === 3 ? 'large' : 'small'"
+        @click="openService(service.id, $event)" 
+      />
     </section>
-    <ServiceModal v-if="selectedId" :service="selectedService" :visible="showModal" @close="router.push({ name: 'Services' })" :icon="serviceIcons[selectedId]" :startPosition="startPosition" />
-</section>
+    <ServiceModal
+      v-if="selectedId"
+      :service="selectedService"
+      :visible="showModal"
+      :icon="serviceIcons[selectedId]"
+      :start-position="startPosition"
+      @close="router.push({ name: 'Services' })"
+    />
+  </section>
 </template>
 
 <style scoped>

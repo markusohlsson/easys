@@ -1,16 +1,16 @@
 <template>
-    <div class="bl-header">
-        <div class="bl-image">
-            <img
-              src="../assets/img/bl.png"
-              alt="Björn Lunden-certifierad"
-            >
-        </div>
-        <div class="bl-intro">
-          <h2>Björn Lunden-certifierad redovisningsbyrå</h2>
-          <p>Som en certifierad byrå är vi en trygg partner som säkerställer att ditt företags redovisning alltid sköts korrekt och modernt.</p>
-        </div>
+  <div class="bl-header">
+    <div class="bl-image">
+      <img
+        src="../assets/img/bl.png"
+        alt="Björn Lunden-certifierad"
+      >
     </div>
+    <div class="bl-intro">
+      <h2>Björn Lunden-certifierad redovisningsbyrå</h2>
+      <p>Som en certifierad byrå är vi en trygg partner som säkerställer att ditt företags redovisning alltid sköts korrekt och modernt.</p>
+    </div>
+  </div>
 </template>
 <script setup>
 </script>

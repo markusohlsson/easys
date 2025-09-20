@@ -1,12 +1,18 @@
 <template>
-    <div class="review-card">
-        <Quote class="review-icon" />
-        <p class="review-description">"{{ review.description }}"</p>
-        <div class="author">
-        <h5 class="review-author">{{ review.author }}</h5>
-        <p class="review-company">{{ review.company }}</p>
-        </div>
+  <div class="review-card">
+    <Quote class="review-icon" />
+    <p class="review-description">
+      "{{ review.description }}"
+    </p>
+    <div class="author">
+      <h5 class="review-author">
+        {{ review.author }}
+      </h5>
+      <p class="review-company">
+        {{ review.company }}
+      </p>
     </div>
+  </div>
 </template>
 
 <script setup>

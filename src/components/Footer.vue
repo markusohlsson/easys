@@ -1,11 +1,19 @@
 <template>
   <section class="footer">
     <div>
-      <h1 class="footer-logo"><router-link to="/">Easy's Redovisning</router-link></h1>
+      <h1 class="footer-logo">
+        <router-link to="/">
+          Easy's Redovisning
+        </router-link>
+      </h1>
     </div>
     <div>
       <ul class="footer-links">
-        <li><router-link to="/integritetspolicy">Integritetspolicy</router-link></li>
+        <li>
+          <router-link to="/integritetspolicy">
+            Integritetspolicy
+          </router-link>
+        </li>
       </ul>
     </div>
     <div>

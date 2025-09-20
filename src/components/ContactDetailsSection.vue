@@ -1,11 +1,11 @@
 <template>
-    <ul class="right-contact">
-        <ContactDetailsCard
-            v-for="detail in mappedDetails"
-            :key="detail.title"
-            :contact-detail="detail"
-        />
-    </ul>
+  <ul class="right-contact">
+    <ContactDetailsCard
+      v-for="detail in mappedDetails"
+      :key="detail.title"
+      :contact-detail="detail"
+    />
+  </ul>
 </template>
 
 <script setup>

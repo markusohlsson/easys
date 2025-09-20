@@ -1,6 +1,6 @@
 <template>
-    <section class="hero">
-      <div class="hero-content">
+  <section class="hero">
+    <div class="hero-content">
       <h1>Easy's Redovisning</h1>
       <p>Din trygga partner inom bokföring, bokslut och skatterådgivning sedan 1994.</p>
       <router-link
@@ -11,7 +11,7 @@
       </router-link>
     </div>
     <span class="credit"><a href="https://unsplash.com/@sadswim?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">ian dooley</a> on <a href="https://unsplash.com/photos/cup-of-coffee-near-macbook-pro-DJ7bWa-Gwks?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></span>
-    </section>
+  </section>
 </template>
       
 

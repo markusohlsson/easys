@@ -7,8 +7,8 @@
       <h3>{{ service.title }}</h3>
     </div>
     <p>{{ service.shortDesc }}</p>
-      <span class="card-link">Läs mer...</span>
-    </div>
+    <span class="card-link">Läs mer...</span>
+  </div>
 </template>
 
 <script setup>

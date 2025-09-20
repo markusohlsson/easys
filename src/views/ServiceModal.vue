@@ -1,20 +1,37 @@
 <template>
-  <div v-if="visible" class="modal-backdrop" @click.self="close">
-        <section class="modal" 
-            :style="modalStyle"
-            >
-        <div class="icon-bg" v-if="icon">
-        <component :is="icon" class="icon-svg" />
-        </div>
-        <span class="close-btn" @click="close"><X/></span>
-        <h1>{{ service.title }}</h1>
-        <p>{{ service.longDesc }}</p>
-        <ul class="keypoints">
-            <li v-for="(keypoint, index) in service.keyPoints" :key="index">
-            <Check class="icon-check"/> {{ keypoint }}
-            </li>
-        </ul>
-        </section>
+  <div
+    v-if="visible"
+    class="modal-backdrop"
+    @click.self="close"
+  >
+    <section
+      class="modal" 
+      :style="modalStyle"
+    >
+      <div
+        v-if="icon"
+        class="icon-bg"
+      >
+        <component
+          :is="icon"
+          class="icon-svg"
+        />
+      </div>
+      <span
+        class="close-btn"
+        @click="close"
+      ><X /></span>
+      <h1>{{ service.title }}</h1>
+      <p>{{ service.longDesc }}</p>
+      <ul class="keypoints">
+        <li
+          v-for="(keypoint, index) in service.keyPoints"
+          :key="index"
+        >
+          <Check class="icon-check" /> {{ keypoint }}
+        </li>
+      </ul>
+    </section>
   </div>
 </template>
 
@@ -25,7 +42,6 @@ import { ref, nextTick, computed, watch } from 'vue';
 const props = defineProps({
   service: {
     type: Object,
-    required: true,
     default: () => ({ id: '', title: '', longDesc: '', keyPoints: [] })
   },
   visible: {
@@ -42,8 +58,6 @@ const props = defineProps({
   }
 });
 const emit = defineEmits(['close']);
-
-const isClosing = ref(false);
 
 function close() {
   if (!props.startPosition) {

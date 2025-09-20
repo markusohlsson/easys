@@ -34,46 +34,111 @@ watch(route, () => {
 </script>
 
 <template>
-  <nav class="navigation" v-if="isMobile" :class="navClass">
-  <section class="navigation-section logo">
-          <h1 class="nav-logo"><BarChart class="nav-logo-icon"/><router-link to="/" >Easy's Redovisning</router-link></h1>
-  </section>
-  <section>
+  <nav
+    v-if="isMobile"
+    class="navigation"
+    :class="navClass"
+  >
+    <section class="navigation-section logo">
+      <h1 class="nav-logo">
+        <BarChart class="nav-logo-icon" /><router-link to="/">
+          Easy's Redovisning
+        </router-link>
+      </h1>
+    </section>
+    <section>
       <div class="icon-container">
-        <Menu v-if="!menuOpen" @click="menuOpen = true" class="menu-icon"/>
-        <X v-else @click="menuOpen = false" class="menu-icon"/>
+        <Menu
+          v-if="!menuOpen"
+          class="menu-icon"
+          @click="menuOpen = true"
+        />
+        <X
+          v-else
+          class="menu-icon"
+          @click="menuOpen = false"
+        />
       </div>
       <transition name="slide-fade">
-        <ul class="navigation-links" v-if="menuOpen" :class="menuOpen ? 'open' : 'closed'">
-          <li><router-link to="/"><Home />Hem</router-link></li>
-          <li><router-link to="/tjanster"><Layers/>Tjänster</router-link></li>
-          <li><router-link to="/om"><Info/>Om</router-link></li>
-          <li><router-link to="/faq"><HelpCircle/>FAQ</router-link></li>
-          <li><router-link to="/kontakt"><Contact />Kontakta oss</router-link></li>
+        <ul
+          v-if="menuOpen"
+          class="navigation-links"
+          :class="menuOpen ? 'open' : 'closed'"
+        >
+          <li>
+            <router-link to="/">
+              <Home />Hem
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/tjanster">
+              <Layers />Tjänster
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/om">
+              <Info />Om
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/faq">
+              <HelpCircle />FAQ
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/kontakt">
+              <Contact />Kontakta oss
+            </router-link>
+          </li>
         </ul>
       </transition>
-  </section>
+    </section>
   </nav>
-  <nav class="navigation" v-else>
+  <nav
+    v-else
+    class="navigation"
+  >
     <section class="navigation-section logo">
-      <h1 class="nav-logo"><BarChart class="nav-logo-icon"/>Easy's Redovisning</h1>
+      <h1 class="nav-logo">
+        <BarChart class="nav-logo-icon" />Easy's Redovisning
+      </h1>
     </section>
     <section class="navigation-section links">
       <ul class="navigation-links">
-        <li><router-link to="/">Hem</router-link></li>
-        <li class="divider"></li>
-        <li><router-link to="/tjanster">Tjänster</router-link></li>
-        <li class="divider"></li>
-        <li><router-link to="/om">Om</router-link></li>
-        <li class="divider"></li>
-        <li><router-link to="/faq">FAQ</router-link></li>
+        <li>
+          <router-link to="/">
+            Hem
+          </router-link>
+        </li>
+        <li class="divider" />
+        <li>
+          <router-link to="/tjanster">
+            Tjänster
+          </router-link>
+        </li>
+        <li class="divider" />
+        <li>
+          <router-link to="/om">
+            Om
+          </router-link>
+        </li>
+        <li class="divider" />
+        <li>
+          <router-link to="/faq">
+            FAQ
+          </router-link>
+        </li>
       </ul>
     </section>
     <section class="navigation-section cta">
-      <router-link to="/kontakt" class="cta-button">Kontakta oss</router-link>
+      <router-link
+        to="/kontakt"
+        class="cta-button"
+      >
+        Kontakta oss
+      </router-link>
     </section>
   </nav>
-
 </template>
 
 <style scoped>

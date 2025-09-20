@@ -2,24 +2,22 @@
 import ContactDetailsSection from '../components/ContactDetailsSection.vue';
 import ContactForm from '../components/ContactForm.vue';
 import Map from '../components/Map.vue';
-import { Phone, Mail, MapPin, Clock } from 'lucide-vue-next';
 </script>
 
 <template>
-    <section class="container">
+  <section class="container">
     <section class="contact">
-    <section class="left">
+      <section class="left">
         <h1>Kontakta oss</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et corrupti, delectus architecto ipsa laborum soluta mollitia provident? Delectus doloremque maxime a temporibus inventore dicta porro exercitationem, voluptatibus non quasi eos?</p>
-      <ContactForm />
-
-    </section>
-    <section class="right">
+        <ContactForm />
+      </section>
+      <section class="right">
         <ContactDetailsSection />
         <Map />
+      </section>
     </section>
-    </section>
-    </section>
+  </section>
 </template>
 
 <style scoped>

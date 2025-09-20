@@ -1,11 +1,11 @@
 <template>
-    <section class="hero-container">
-        <div class="text-container">
-            <h1>{{ title }}</h1>
-            <p>{{ description }}</p>
-            <p>{{ extraDescription }}</p>
-        </div>
-    </section>
+  <section class="hero-container">
+    <div class="text-container">
+      <h1>{{ title }}</h1>
+      <p>{{ description }}</p>
+      <p>{{ extraDescription }}</p>
+    </div>
+  </section>
 </template>
 
 <script setup>
@@ -13,17 +13,14 @@ import { defineProps } from 'vue';
 defineProps({
     title: {
         type: String,
-        required: true,
         default: '',
     },
     description: {
         type: String,
-        required: true,
         default: '',
     },
     extraDescription: {
         type: String,
-        required: false,
         default: '',
     }
 })

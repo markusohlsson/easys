@@ -1,33 +1,34 @@
 <template>
-    <li class="contact-details">
-        <div class="contact-icon">
-            <component :is="contactDetail.icon" />
-        </div>
-        <div class="details-info">  
-            <h3 class="details-title">{{contactDetail.title}}</h3>
-            <p class="details-text" v-if="contactDetail.link"><a :href="contactDetail.link">{{ contactDetail.text }}</a></p>
-            <p class="details-text" v-else>{{ contactDetail.text }}</p>
-        </div>
-    </li>
+  <li class="contact-details">
+    <div class="contact-icon">
+      <component :is="contactDetail.icon" />
+    </div>
+    <div class="details-info">  
+      <h3 class="details-title">
+        {{ contactDetail.title }}
+      </h3>
+      <p
+        v-if="contactDetail.link"
+        class="details-text"
+      >
+        <a :href="contactDetail.link">{{ contactDetail.text }}</a>
+      </p>
+      <p
+        v-else
+        class="details-text"
+      >
+        {{ contactDetail.text }}
+      </p>
+    </div>
+  </li>
 </template>
 <script setup>
-import { Phone, Mail, MapPin, Clock } from "lucide-vue-next"
-
 defineProps({
     contactDetail: {
         type: Object,
-        required: true,
-        default: {},
+        default: ()=>{},
     }
 })
-
-const iconMap = {
-  Phone,
-  Mail,
-  MapPin,
-  Clock,
-}
-
 </script>
 
 <style scoped>

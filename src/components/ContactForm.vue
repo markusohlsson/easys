@@ -1,26 +1,66 @@
 <template>
   <form class="contact-form">
     <div class="contact-form-row">
-      <input type="text" id="name" name="name" class="contact-form-input" placeholder=" " />
-      <label for="name" class="contact-form-label">Namn</label>
+      <input
+        id="name"
+        type="text"
+        name="name"
+        class="contact-form-input"
+        placeholder=" "
+      >
+      <label
+        for="name"
+        class="contact-form-label"
+      >Namn</label>
     </div>
 
     <div class="contact-form-row">
-      <input type="email" id="email" name="email" class="contact-form-input" placeholder=" " />
-      <label for="email" class="contact-form-label">E-post</label>
+      <input
+        id="email"
+        type="email"
+        name="email"
+        class="contact-form-input"
+        placeholder=" "
+      >
+      <label
+        for="email"
+        class="contact-form-label"
+      >E-post</label>
     </div>
 
     <div class="contact-form-row">
-      <input type="text" id="subject" name="subject" class="contact-form-input" placeholder=" " />
-      <label for="subject" class="contact-form-label">Ämne</label>
+      <input
+        id="subject"
+        type="text"
+        name="subject"
+        class="contact-form-input"
+        placeholder=" "
+      >
+      <label
+        for="subject"
+        class="contact-form-label"
+      >Ämne</label>
     </div>
 
     <div class="contact-form-row">
-      <textarea id="message" name="message" class="contact-form-textarea" placeholder=" "></textarea>
-      <label for="message" class="contact-form-label textarea-label">Meddelande</label>
+      <textarea
+        id="message"
+        name="message"
+        class="contact-form-textarea"
+        placeholder=" "
+      />
+      <label
+        for="message"
+        class="contact-form-label textarea-label"
+      >Meddelande</label>
     </div>
 
-    <button type="submit" class="cta-button">Skicka</button>
+    <button
+      type="submit"
+      class="cta-button"
+    >
+      Skicka
+    </button>
   </form>
 </template>
 

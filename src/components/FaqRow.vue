@@ -1,12 +1,12 @@
 <template>
-    <details>
-        <summary>
-            <h3>{{ title }}</h3>
-            <ChevronDown  class="icon"/>
-        </summary>
-        <div class="divider"></div>
-        <p>{{ description }}</p>
-    </details>
+  <details>
+    <summary>
+      <h3>{{ title }}</h3>
+      <ChevronDown class="icon" />
+    </summary>
+    <div class="divider" />
+    <p>{{ description }}</p>
+  </details>
 </template>
 <script setup>
 import { ChevronDown } from 'lucide-vue-next';
@@ -14,12 +14,10 @@ import { defineProps } from 'vue';
 defineProps({
     title: {
         type: String,
-        required: true,
         default: '',
     },
     description: {
         type: String,
-        required: true,
         default: ''
     }
 })

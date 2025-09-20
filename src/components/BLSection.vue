@@ -5,19 +5,19 @@ import BLCardLarge from './BLCardLarge.vue';
 </script>
 
 <template>
-    <section class="bl-trusted">
+  <section class="bl-trusted">
     <div class="container">
-        <BLCardLarge />
-        <BLBenefitSection />
+      <BLCardLarge />
+      <BLBenefitSection />
       <div class="bl-cta">
-          <a
+        <a
           class="cta-button"
-            href="https://www.bjornlunden.se/hitta-din-redovisningsbyr%c3%a5/bjorn-lunden-certifierad-redovisningsbyr__4117"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          href="https://www.bjornlunden.se/hitta-din-redovisningsbyr%c3%a5/bjorn-lunden-certifierad-redovisningsbyr__4117"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Läs mer hos Björn Lunden
-          </a>
+        </a>
       </div>
     </div>
   </section>

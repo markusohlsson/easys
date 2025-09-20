@@ -1,13 +1,10 @@
 <script setup>
-import { ClipboardListIcon, BookOpenIcon, UserCheckIcon, FileTextIcon } from 'lucide-vue-next';
 import Card from '../components/Card.vue';
 import services from '../data/services.json';
 import { serviceIcons } from '../data/icons';
-import { useRouter } from 'vue-router';
 import ServiceModal from '../views/ServiceModal.vue';
 import { ref } from 'vue';
 
-const router = useRouter();
 const featuredServices = services.slice(0, 4);
 
 const selectedId = ref(null);
@@ -25,22 +22,29 @@ function expandService(id, event) {
 
 </script>
 <template>
-    <section class="services">
+  <section class="services">
     <div class="container">
-        <div class="intro-text">
-            <h2>Tjänster</h2>
-            <p>Allt pappersarbete som du behöver hjälp med i ditt företag</p>
-        </div>
+      <div class="intro-text">
+        <h2>Tjänster</h2>
+        <p>Allt pappersarbete som du behöver hjälp med i ditt företag</p>
+      </div>
       <div class="services-grid">
-        <template v-for="(service, index) in featuredServices">
-            <Card 
-                :service="service"
-                :icon="serviceIcons[service.id]"
-                :class="(index === 0 || index === 3) ? 'card-large' : 'card-small'"
-                @click="expandService(service.id, $event)"
-                />
-        </template>
-        <ServiceModal v-if="selectedId" :service="selectedService" :visible="showExpandedService" :icon="serviceIcons[selectedId]" @close="selectedId = null" :startPosition="startPosition"/>
+        <Card
+          v-for="(service, index) in featuredServices" 
+          :key="service.id"
+          :service="service"
+          :icon="serviceIcons[service.id]"
+          :class="(index === 0 || index === 3) ? 'card-large' : 'card-small'"
+          @click="expandService(service.id, $event)"
+        />
+        <ServiceModal
+          v-if="selectedId"
+          :service="selectedService"
+          :visible="showExpandedService"
+          :icon="serviceIcons[selectedId]"
+          :start-position="startPosition"
+          @close="selectedId = null"
+        />
       </div>
       <div class="services-cta">
         <router-link

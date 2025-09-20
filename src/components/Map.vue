@@ -1,6 +1,6 @@
 <script setup>
-import { ref, onMounted } from 'vue';
-import { LMap, LTileLayer, LMarker } from '@vue-leaflet/vue-leaflet';
+import { ref } from 'vue';
+import { LMap, LTileLayer } from '@vue-leaflet/vue-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 
@@ -9,12 +9,10 @@ const zoom = ref(8);
 const targetZoom = 12; 
 const duration = 1.5;
 
-// Function to get CSS variable dynamically
 function getCssVariable(variable) {
   return getComputedStyle(document.documentElement).getPropertyValue(variable).trim();
 }
 
-// Create a dynamic SVG marker icon based on --color-primary
 function createColoredMarker() {
   const fillColor = getCssVariable('--color-primary') || '#D9A066'; // fallback color
 
@@ -28,13 +26,13 @@ function createColoredMarker() {
       </svg>
     `,
     iconSize: [24, 40],
-    iconAnchor: [12, 40], // bottom point of marker
+    iconAnchor: [12, 40],
     popupAnchor: [0, -40],
   });
 }
 
 function onMapReady(map) {
-  const marker = L.marker(center, { icon: createColoredMarker() })
+  L.marker(center, { icon: createColoredMarker() })
     .addTo(map)
     .bindPopup('Valsättravägen 27, 184 94 Åkersberga')
     .openPopup();
@@ -53,7 +51,7 @@ function onMapReady(map) {
     >
       <LTileLayer
         url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
-        attribution='&copy; OpenStreetMap contributors &copy; CARTO'
+        attribution="&copy; OpenStreetMap contributors &copy; CARTO"
       />
     </LMap>
   </section>

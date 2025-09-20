@@ -4,11 +4,14 @@ import BlBenefits from '../data/BlBenefits.json'
 </script>
 
 <template>
-    <div class="bl-benefits-grid">
-        <template v-for="benefit in BlBenefits">
-        <BLBenefitCard :title="benefit.title" :description="benefit.description" />
-        </template>
-    </div>
+  <div class="bl-benefits-grid">
+    <BLBenefitCard
+      v-for="benefit in BlBenefits"
+      :key="benefit.title"
+      :title="benefit.title"
+      :description="benefit.description"
+    />
+  </div>
 </template>
 
 <style scoped>

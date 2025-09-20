@@ -1,4 +1,4 @@
-<script setup >
+<script setup>
 import BLSection from '../components/BLSection.vue';
 import Hero from '../components/Hero.vue';
 import HomeServices from '../components/HomeServices.vue';
