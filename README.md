@@ -97,15 +97,5 @@ easys/
 └── package.json       # Project metadata & scripts
 ```
 
----
-
-## 🎯 Roadmap  
-- [ ] Live demo deployment  
-- [ ] Fully functional contact form with email integration  
-- [ ] Testimonials/reviews section  
-- [ ] Improved animations and UI polish  
-
----
-
 ## 📖 License  
 This project is licensed under the **MIT License** – feel free to use and adapt it.
