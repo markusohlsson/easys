@@ -3,7 +3,7 @@
 
 :root {
   --color-background-dark: #122118;  /* Dark background */
-  --color-background-light: #1A2E23; /* Light background sections */
+  --color-background-light: #1a2e23; /* Light background sections */
   --color-surface: #1A2E23;          /* Cards / surfaces on dark bg */
   --color-primary: #38E07B;           /* Buttons, icons, links */
   --color-primary-dark: #2EBF5F;      /* Hover / active state */

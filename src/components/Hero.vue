@@ -10,10 +10,19 @@
         Kontakta oss
       </router-link>
     </div>
-  </section>
+    <span class="credit"><a href="https://unsplash.com/@sadswim?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">ian dooley</a> on <a href="https://unsplash.com/photos/cup-of-coffee-near-macbook-pro-DJ7bWa-Gwks?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></span>
+    </section>
 </template>
+      
 
 <style scoped>
+.credit {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
 .hero {
   position: relative;
   width: 100%;
@@ -26,6 +35,9 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+.hero:hover .credit {
+  opacity: 1;
 }
 
 .hero::before {
@@ -61,5 +73,8 @@
   margin-bottom: 2rem;
   color: var(--color-text);
   text-shadow: 0 1px 4px rgb(0 0 0 / 40%);
+}
+
+@media screen and (max-width: 768px){
 }
 </style>

@@ -1,8 +1,14 @@
 @import url('../style/variables.css');
 body {
   font-family: var(--font-body);
-  background-color: var(--color-background-light);
+  background: radial-gradient(
+    circle at top center,
+    #1f392d 0%,
+    #1a2e23 60%,
+    #121f1b 100%
+  );
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6 {

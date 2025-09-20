@@ -121,24 +121,6 @@ watch(() => props.visible, async (val) => {
 </script>
 
 <style scoped>
-.modal :deep(h1) {
-    color: #0f172A;
-}
-.modal :deep(p) {
-    color: #64748B;
-}
-.modal :deep(li) {
-    color: #64748B;
-}
-.modal :deep(.close-btn) {
-    color: #0f172A;
-    transition: background 0.3s ease, color 0.4s ease;
-    border-radius:50%;
-}
-.modal:deep(.close-btn):hover {
-    color: var(--color-primary);
-    background-color: #0f172A;
-}
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -153,7 +135,7 @@ watch(() => props.visible, async (val) => {
 }
 
 .modal {
-  background-color: white;
+  background-color: var(--color-background-dark);
   overflow-y: auto;
   border-radius: 10px;
   position: relative;
@@ -214,7 +196,7 @@ watch(() => props.visible, async (val) => {
   width: 12rem; 
   height: 12rem;
   opacity: 0.07;     
-  color: #0f172A;    
+  color: var(--color-primary);    
 }
 
 @media screen and (max-width: 768px) {
@@ -229,5 +211,13 @@ watch(() => props.visible, async (val) => {
   .modal p {
     width: 100%;
   }
+  .icon-check {
+    height:20px;
+    width:20px;
+  }
+  .keypoints li {
+    font-size: 14px;
+    gap:10px;
+}
 }
 </style>

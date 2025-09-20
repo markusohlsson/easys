@@ -1,10 +1,9 @@
 <script setup>
-import { ref, onMounted, onUnmounted, computed } from 'vue'
+import { ref, onMounted, onUnmounted, computed, watch } from 'vue'
 import { BarChart, Menu, X, Home, Layers, Info, HelpCircle, Contact} from 'lucide-vue-next';
 import { useRoute } from 'vue-router';
 const route = useRoute();
 
-const darkNav = ['Home'];
 const width = ref(window.innerWidth)
 const menuOpen = ref(false);
 
@@ -23,12 +22,15 @@ onUnmounted(() => {
 const isMobile = computed(() => width.value < 768)
 
 const navClass = computed(() => {
-  if (menuOpen.value && darkNav.includes(route.name)) {
+  if (menuOpen.value) {
     return 'open';
   } else {
     return 'closed';
   }
 });
+watch(route, () => {
+  menuOpen.value = false
+})
 </script>
 
 <template>
