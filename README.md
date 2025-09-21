@@ -2,7 +2,7 @@
 
 A modern single-page application for **Easy’s Redovisning**, showcasing accounting, bookkeeping, and tax advisory services — along with contact information and an overview of services offered.  
 
-🚀 **Live Demo:** *Coming soon*  
+🚀 **Live Demo:** [Link](https://markusohlsson.github.io/easys/#/) 
 
 ---
 
